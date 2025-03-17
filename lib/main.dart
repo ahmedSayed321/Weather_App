@@ -19,6 +19,11 @@ class MyApp extends StatelessWidget {
         return WeatherProvider();
       },
       child: MaterialApp(
+        theme: ThemeData(
+          appBarTheme: AppBarTheme(
+            iconTheme: IconThemeData(color: Colors.white)
+          )
+        ),
         debugShowCheckedModeBanner: false,
         routes: {
           HomeScreen.routeName:(context)=> HomeScreen(),
